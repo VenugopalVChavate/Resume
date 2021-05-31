@@ -150,6 +150,7 @@ section {
 }
 
 .interactions ul li img {
+  clip: 100px 10px;
   width: 7em;
   height: 7em;
   border: 5px solid #006BD6;

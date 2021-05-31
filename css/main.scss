@@ -137,11 +137,13 @@ section{
             border-radius: 1em;
 
             img{
+                clip:  100px 10px;
                 width: 7em;
                 height: 7em;
                 border: 5px solid #006BD6;
                 border-radius: 50%;
                 margin-top: -4.5em;
+                
             }
             }
             li:hover {
