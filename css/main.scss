@@ -89,8 +89,8 @@ section{
             margin-left: 1em;
             position: relative;
             padding-left: 1em;
-
-
+            transition: .3s;
+            
             &:before{
                 content: '';
                 left: -1em;
@@ -101,6 +101,13 @@ section{
                 background-size: contain;
                 margin-right: .5em;
 
+            }
+            &:hover{
+                transition: .3s;
+                color:white;
+                background-color:#3896f5 ;
+                transform: scale(1.0);
+                box-shadow: .1em .1em .1em .1em #042547
             }
 
         }

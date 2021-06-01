@@ -101,6 +101,8 @@ section {
   margin-left: 1em;
   position: relative;
   padding-left: 1em;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .hero .profilepic li:before {
@@ -112,6 +114,17 @@ section {
   background-image: url("../images/bullet.svg");
   background-size: contain;
   margin-right: .5em;
+}
+
+.hero .profilepic li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: white;
+  background-color: #3896f5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: .1em .1em .1em .1em #042547;
+          box-shadow: .1em .1em .1em .1em #042547;
 }
 
 .left-col .subhead {
