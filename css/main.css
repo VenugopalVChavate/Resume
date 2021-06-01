@@ -298,7 +298,7 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 2em;
+    padding-left: 1em;
   }
   .profilepic ul {
     display: -webkit-box;
