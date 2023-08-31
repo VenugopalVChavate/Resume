@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --primary-color :#007Af3;
 }
@@ -7,7 +11,6 @@ body{
     background:rgba(245, 245, 245, 0.87);
     margin: 0;
     font-family: 'Poppins';
-    overflow-x: hidden;
 }
 
 nav{
@@ -434,8 +437,3 @@ nav{
 }    
 }
 
-@media only screen and (min-width:768px){
-    // .interactions{
-    //     padding-bottom: 2em;
-    // }
-} 
