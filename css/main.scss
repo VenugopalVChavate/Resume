@@ -7,7 +7,7 @@ body{
     background:rgba(245, 245, 245, 0.87);
     margin: 0;
     font-family: 'Poppins';
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 nav{
@@ -439,3 +439,16 @@ nav{
     //     padding-bottom: 2em;
     // }
 } 
+
+html, body {
+    // Smooth scroll always for html tag
+    scroll-behavior: smooth;
+    // scroll-snap-type: y; // <-- snap in y axis
+  }
+  
+  // mobile 
+  @media (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    }
+  }
