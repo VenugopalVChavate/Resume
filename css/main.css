@@ -302,4 +302,113 @@ nav li a:hover {
 .mobile-menu-exit {
   float: right;
   margin: 0.5em;
+}
+
+@media only screen and (min-width: 1350px) {
+  .contact-left ul {
+    padding-left: 10em;
+    width: 85%;
+  }
+  .contact-left:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5em;
+    background: var(--primary-color);
+    left: 0;
+    top: -2em;
+  }
+  .contact-left:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3em;
+    background: url("../images/dots.svg") no-repeat;
+    left: 19em;
+    top: -1em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .profilepic {
+    display: flex;
+    padding-left: 2em;
+  }
+  .profilepic ul {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .features-section {
+    display: flexbox;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    padding-top: 0em;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.current a:hover {
+    color: white;
+  }
+  .interactions {
+    padding-bottom: 2em;
+  }
+  .interactions-top ul {
+    display: flex;
+    padding-bottom: 2em;
+  }
+  .interactions-top ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+    height: 12em;
+  }
+  .contact-section .container {
+    display: flex;
+  }
+  .contact-section .contact-left {
+    width: 50%;
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-bottom: 0em;
+  }
+  .contact-section .contact-info {
+    padding-left: 0em;
+    margin: 0em;
+  }
+  .contact-section .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-section .contact-right iframe {
+    height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
