@@ -7,7 +7,6 @@ body {
   background: rgba(245, 245, 245, 0.87);
   margin: 0;
   font-family: "Poppins";
-  padding: 0.01em;
 }
 
 nav {
@@ -410,17 +409,5 @@ nav li a:hover {
 @media only screen and (min-width: 868px) {
   .contact-left {
     display: flex;
-  }
-}
-@media only screen and (max-width: 1080px) {
-  .hobbies {
-    display: flex;
-    flex-direction: column;
-  }
-  .hobbies li {
-    justify-content: center;
-  }
-  .hobbies li div {
-    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -7,7 +7,6 @@ body{
     background:rgba(245, 245, 245, 0.87);
     margin: 0;
     font-family: 'Poppins';
-    padding: .01em;
 }
 
 nav{
@@ -440,15 +439,15 @@ nav{
     }
 } 
 
-@media only screen and (max-width:1080px){
-    .hobbies{
-        display:flex;
-        flex-direction: column;
-        li{
-            justify-content: center;
-            div{
-            width: 100%;
-            }
-        }
-    }
-} 
+// @media only screen and (max-width:1080px){
+//     .hobbies{
+//         display:flex;
+//         flex-direction: column;
+//         li{
+//             justify-content: center;
+//             div{
+//             width: 100%;
+//             }
+//         }
+//     }
+// } 
