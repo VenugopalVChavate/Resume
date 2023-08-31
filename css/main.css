@@ -300,7 +300,7 @@ nav li a:hover {
 
 @media only screen and (min-width: 1350px) {
   .contact-left ul {
-    padding-left: 10em;
+    padding-left: 5em;
     width: 85%;
   }
   .contact-left:before {
@@ -388,7 +388,7 @@ nav li a:hover {
   .contact-section .contact-left {
     width: 50%;
     padding-top: 0em;
-    padding-left: 3em;
+    padding-left: 1em;
     padding-bottom: 0em;
   }
   .contact-section .contact-info {
