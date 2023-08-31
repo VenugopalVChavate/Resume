@@ -13,6 +13,18 @@ nav {
   display: none;
 }
 
+.container3 {
+  display: block;
+  justify-content: center;
+}
+
+.Resume {
+  width: 100%;
+}
+.Resume iframe {
+  height: 40em;
+}
+
 .navbar {
   background: #ffffff;
   padding-top: 0.5em;
@@ -174,6 +186,7 @@ section {
 
 .interactions-top {
   padding-top: 3.5em;
+  margin-bottom: 2em;
 }
 .interactions-top ul {
   margin: 0;
@@ -183,6 +196,7 @@ section {
   background: white;
   text-align: center;
   padding: 2em 1em;
+  height: 15em;
   width: 80%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
@@ -196,35 +210,6 @@ section {
   margin-top: -4.5em;
 }
 .interactions-top ul li:hover {
-  transform: scale(1.02);
-  box-shadow: 0.3em 0.3em 0.3em 0.3em #042547;
-}
-
-.interactions-bottom {
-  padding-top: 3.5em;
-}
-.interactions-bottom ul {
-  margin: 0;
-  justify-content: center;
-}
-.interactions-bottom ul li {
-  transition: 0.5s;
-  background: white;
-  text-align: center;
-  padding: 2em 1em;
-  width: 26.66%;
-  margin: 0 auto 5em auto;
-  border-radius: 1em;
-}
-.interactions-bottom ul li img {
-  clip: 100px 10px;
-  width: 7em;
-  height: 7em;
-  border: 5px solid #006BD6;
-  border-radius: 50%;
-  margin-top: -4.5em;
-}
-.interactions-bottom ul li:hover {
   transform: scale(1.02);
   box-shadow: 0.3em 0.3em 0.3em 0.3em #042547;
 }
@@ -352,49 +337,9 @@ nav li a:hover {
   }
 }
 @media only screen and (min-width: 1080px) {
-  .interactions-top ul {
-    display: flex;
-    padding-bottom: 2em;
+  .features-section {
+    display: flexbox;
   }
-  .interactions-top ul li {
-    margin: 0 1em;
-  }
-  .interactions-bottom ul {
-    display: flex;
-    padding-bottom: 2em;
-  }
-  .interactions-bottom ul li {
-    margin: 0 1em;
-  }
-  .contact-section {
-    position: relative;
-    height: 12em;
-  }
-  .contact-section .container {
-    display: flex;
-  }
-  .contact-section .contact-left {
-    width: 50%;
-    padding-top: 0em;
-    padding-left: 3em;
-    padding-bottom: 0em;
-  }
-  .contact-section .contact-info {
-    padding-left: 0em;
-    margin: 0em;
-  }
-  .contact-section .contact-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
-  }
-  .contact-section .contact-right iframe {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
@@ -428,15 +373,46 @@ nav li a:hover {
   .navbar nav li.current a:hover {
     color: white;
   }
+  .interactions {
+    padding-bottom: 2em;
+  }
+  .interactions-top ul {
+    display: flex;
+    padding-bottom: 2em;
+  }
+  .interactions-top ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+    height: 12em;
+  }
+  .contact-section .container {
+    display: flex;
+  }
+  .contact-section .contact-left {
+    width: 50%;
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-bottom: 0em;
+  }
+  .contact-section .contact-info {
+    padding-left: 0em;
+    margin: 0em;
+  }
+  .contact-section .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-section .contact-right iframe {
+    height: 100%;
+  }
 }
-.container3 {
-  display: block;
-  justify-content: center;
-}
-
-.Resume {
-  width: 100%;
-}
-.Resume iframe {
-  height: 40em;
+@media only screen and (min-width: 468px) {
+  .interactions {
+    padding-bottom: 2em;
+  }
 }/*# sourceMappingURL=main.css.map */
