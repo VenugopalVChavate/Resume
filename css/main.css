@@ -182,23 +182,24 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 1em;
 }
 
 .interactions-top {
   padding-top: 3.5em;
-  margin-bottom: 2em;
 }
 .interactions-top ul {
+  padding: 0 0 3em 0;
   margin: 0;
 }
 .interactions-top ul li {
   transition: 0.5s;
   background: white;
   text-align: center;
-  padding: 2em 1em;
+  padding: 1em 1em;
   height: 15em;
   width: 80%;
-  margin: 0 auto 2em auto;
+  margin: 1em auto 5em auto;
   border-radius: 1em;
 }
 .interactions-top ul li img {
@@ -248,7 +249,11 @@ input[type=submit] {
 }
 
 .contact-left {
-  padding: 2em;
+  padding: 0.5em;
+  margin: 0 0 0 1em;
+}
+.contact-left ul {
+  padding-left: 0em;
 }
 
 iframe {
@@ -300,7 +305,6 @@ nav li a:hover {
 
 @media only screen and (min-width: 1350px) {
   .contact-left ul {
-    padding-left: 5em;
     width: 85%;
   }
   .contact-left:before {
@@ -388,7 +392,6 @@ nav li a:hover {
   .contact-section .contact-left {
     width: 50%;
     padding-top: 0em;
-    padding-left: 1em;
     padding-bottom: 0em;
   }
   .contact-section .contact-info {
