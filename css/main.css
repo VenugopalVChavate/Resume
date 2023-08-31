@@ -410,4 +410,16 @@ nav li a:hover {
   .contact-left {
     display: flex;
   }
+}
+@media only screen and (max-width: 1080px) {
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies li {
+    justify-content: center;
+  }
+  .hobbies li div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

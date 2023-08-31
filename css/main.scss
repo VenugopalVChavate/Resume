@@ -438,3 +438,16 @@ nav{
         display: flex;
     }
 } 
+
+@media only screen and (max-width:1080px){
+    .hobbies{
+        display:flex;
+        flex-direction: column;
+        li{
+            justify-content: center;
+            div{
+            width: 100%;
+            }
+        }
+    }
+} 
