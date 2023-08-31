@@ -351,11 +351,11 @@ nav{
             display: flex;
         }
     }
-    .hero-img{
-        margin-right: 1em;
-        margin-left:1em;
-        border-radius: 30%;
-    }
+    // .hero-img{
+    //     margin-right: 1em;
+    //     margin-left:1em;
+    //     border-radius: 30%;
+    // }
 }
 @media only screen and (min-width:1080px){
     .features-section{
@@ -433,7 +433,7 @@ nav{
 }    
 }
 
-@media only screen and (min-width:468px){
+@media only screen and (min-width:768px){
     .interactions{
         padding-bottom: 2em;
     }
