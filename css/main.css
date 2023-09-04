@@ -15,7 +15,6 @@ nav {
 }
 
 .container3 {
-  display: block;
   justify-content: center;
 }
 
@@ -273,7 +272,6 @@ nav.menu-btn {
 
 nav {
   position: fixed;
-  display: block;
   z-index: 3;
   background-color: white;
   width: 66%;

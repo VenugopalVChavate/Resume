@@ -15,7 +15,7 @@ nav{
  display:none;
 }
 .container3{
-    display:block;
+    // display:block;
     justify-content: center;
 }
 .Resume{
@@ -281,7 +281,6 @@ nav.menu-btn{
 }
 nav{
     position: fixed;
-    display: block;
     z-index: 3;
     background-color: white;
     width:66%;
