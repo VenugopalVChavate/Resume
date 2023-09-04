@@ -235,35 +235,6 @@ section{
 h2{
     font-size: 2em;
 }
-label{
-    display: block;
-    font-size: 1.2em;
-    margin-bottom:  .5em;
-}
-input, textarea{
-    width: 100%;
-    padding: .8em;
-    margin-bottom: 1em;
-    border-radius: .3em;
-    border : 2px solid rgb(211, 211, 211);
-    box-sizing: border-box;
-}
-
-input[type="submit"]{
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1em;
-    width:10em;
-    border-radius: 300px;
-    font-weight: bold;
-    margin-bottom: 5em;
-    display:inline-block;
-    border:none;
-    width:unset;
-    cursor: pointer;
-
-}
-
 
 .contact-left{
     padding:.5em;
@@ -484,10 +455,11 @@ nav{
     background: #98c1d9;
     // background-color: #fff;
     margin: 0% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: .5em;
+    border: 0.0625em solid #888;
     width: 70%;
     border-radius: 1em;
+    justify-content: center;
     p {
         font-size: 1.2em;
         margin-bottom: 1em;
@@ -503,8 +475,9 @@ nav{
 	background-color:#072736;
 	color:#fff;
     margin:0;
-	padding:30px 20px;
-	box-shadow:0px 0px 10px rgba(0,0,0,.5);
+	padding:2em 1em;
+	box-shadow:0em 0em 1em rgba(0,0,0,.8);
+    border-radius: 1em;
     h2 {
         font-size: 2em;
         margin-top: 0em;
@@ -512,11 +485,11 @@ nav{
 }
 .timeline ul{
 	list-style-type:none;
-	border-left:2px solid #094a68;
-	padding:10px 5px;
+	border-left:.125em solid #094a68;
+	padding:0.63em 0.33em;
 }
 .timeline ul li{
-	padding:20px 20px;
+	padding:1.25em 1.25em;
 	position:relative;
 	cursor:pointer;
 	transition:.5s;
@@ -524,29 +497,29 @@ nav{
 .timeline ul li span{
 	display:inline-block;
 	background-color:#1685b8;
-	border-radius:25px;
-	padding:2px 5px;
-	font-size:15px;
+	border-radius:1.5625em;
+	padding:0.125em 0.345;
+	font-size:0.9375em;
 	text-align:center;
 }
 .timeline ul li .content h3{
 	color:#34ace0;
-	font-size:17px;
-	padding-top:5px;
+	font-size:1.0625em;
+	padding-top:0.345;
 }
 .timeline ul li .content p{
-	padding:5px 0px 15px 0px;
-	font-size:15px;
+	padding:0.345 0em 0.9375em 0em;
+	font-size:0.9375em;;
 }
 .timeline ul li:before{
 	position:absolute;
 	content:'';
-	width:10px;
-	height:10px;
+	width:0.634em;
+	height:0.634em;
 	background-color:#34ace0;
 	border-radius:50%;
-	left:-11px;
-	top:28px;
+	left:-0.650em;
+	top:1.75em;
 	transition:.5s;
 }
 .timeline ul li:hover{
@@ -554,7 +527,7 @@ nav{
 }
 .timeline ul li:hover:before{
 	background-color:#0F0;
-	box-shadow:0px 0px 10px 2px #0F0;
+	box-shadow:0em 0em 0.634em 0.125em #0F0;
 }
 @media (max-width:300px){
 	.timeline{
@@ -605,7 +578,7 @@ nav{
   
   /* Thumb styles */
   ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: .634;
     background: #ccc;
   }
   
