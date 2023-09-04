@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="venu, venugopal, VenugopalChavate, Venugopal Chavate, Venu Chavate, Chavate, Chavate venu, CHavate venugopal, gopal, gopal chavate, venya, venu chavate, venu website, venugopal website, chavate website">
     <title>VenugopalChavate</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -58,21 +60,24 @@
 <section class="interactions">
     <div class="interactions-top">
         <ul>
-            <li>
+            <li class="Experience">
                 <img src="./images/Experience.jpg" alt="Experience">
                 <blockquote>
-                    C# Advanced Certification.<br>Worked on HMI(Human Machine Interfaces) development in Pharmaceutical Applications.
+                    Gained Experience on several Devops tools, taken initiative to suggest solutions to client problems and gained appreciation
                 </blockquote>
-                <cite>-2 Years Experience</cite>
+                <cite>- 4 years Experience -</cite>
             </li>
-            <li>
+            <li class="Skills">
                 <img src="./images/skills.jpg" alt="Skills">
                 <blockquote>
-                    Project Experience in MySQL And Microsoft MSSQl
+                    Equipped with knowlegde of latest devops tools like Docker, Terraform, AWS, Gitlab CI/CD, Kubernetes etc.
                 </blockquote>
-                <cite>-2 Years Experience</cite>
+                <blockquote>
+                    Supported on several Dev Oriented tools like Mongodb, NodeJs, Python etc.
+                </blockquote>
+                <!-- <cite>-2 Years Experience</cite> -->
             </li>
-            <li>
+            <li class="achievements">
                 <img src="./images/achievements.jpg" alt="achievements">
                 <blockquote>
                     Project Experience on SCADA Application Development using ASP.NET Core and MVC.                
@@ -134,18 +139,139 @@
         <div class="contact-right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139247.52121490956!2d77.63517373850813!3d12.939406923631047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1693294330227!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 </section>
-<script>
-    const mobileBtn = document.getElementById('mobile-cta');
-          nav = document.querySelector('nav');
-          mobileBtnexit = document.getElementById('mobile-exit');
+<!-- Modal Popup for Experience -->
+<div id="myModalExperience" class="modal" >
+    <div class="modal-content" data-new-gr-c-s-check-loaded="14.1122.0" data-gr-ext-installed>
+        <span class="close">&times;</span>
+        <div class="timeline">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <span>July 2023 — Present</span>
+                    <div class="content">
+                        <h3>ATMECS Technologies Pvt Ltd - Senior DevOps Engineer</h3>
+                        <h4>Client: R&D Group pioneering Hyperloop Transport Technology</h4>
+                            <div class="experience-description">
+                                <p>Responsibilities:</p>
+                                <ul>
+                                    <li>Created a plan to transition the client's AI-based Application to containerized microservices from previously existing monolithic architecture using Docker.</li>
+                                    <li>Created a robust deployment model using Docker-Compose on AWS EC2 instance using robust scripts for deployment and database backup.</li>
+                                    <li>Enabled the developers to deploy or backup the database with a single command using created scripts.</li>
+                                    <li>Provided detailed projection of the project cost and suggested client to optimize AWS resources to reduce costs.</li>
+                                    <li>Provided insights to the client on their plans for Gitlab pipeline creation and Kubernetes Application.</li>
+                                    <li>Helped client to save more than 1555 USD yearly and received appreciation from the client on the initiative and execution.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    <span>June 2021 — May 2023</span>
+                    <div class="content">
+                        <h3>LTIMindtree LTD - Senior DevOps Engineer</h3>
+                        <h4>Client: Client: Client is a Web service provider for Federal Governments of various countries.</h4>
+                            <div class="experience-description">
+                                <p>Responsibilities:</p>
+                                <ul>
+                                    <li>I automated the deployment cycle using Gitlab CI/CD. As Gitlab uses the Docker-IN-Docker (DinD) concept.</li>
+                                    <li>I'm also responsible for the complete Migration of client-acquired product groups to Gitlab from various code bases such as Bit Bucket, Azure DevOps, Github, and SVN.</li>
+                                    <li>Carried out Cloud operations on VPC peering to connect acquired accounts to private cloud, Terraform.</li>
+                                    <li>I have adequate knowledge of tools such as Chef, AWS ECS, AWS ECR, Postman, and Janus for the Deployment part.</li>
+                                    <li>This also required me to migrate the existing CI/CD structure to Gitlab. Thus I have adequate knowledge of CI/CD tools such as Jenkins, Teams City, Circle-CI, Travis, Octopus, and AppVeyor.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    <span>June 2019 — May 2021</span>
+                    <div class="content">
+                        <h3>SR Automation - .NET Support Engineer</h3>
+                        <div class="experience-description">
+                            <p>Responsibilities:</p>
+                            <ul>
+                                <li>Worked on SCADA systems in client premises.</li>
+                                <li>I was to configure functionalities that required Jscript.NET, VB, and MSSQL scripting.</li>
+                                <li>I was also responsible for Chef-server check-ins.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Repeat the above structure for other work experiences -->
+    </div>
+</div>
 
-          mobileBtn.addEventListener('click', ()=>{
-              nav.classList.add('menu-btn');
-          })
-          mobileBtnexit.addEventListener('click', ()=>{
-              nav.classList.remove('menu-btn');
-          })
-</script>
+
+<!-- Modal Popup for Skills -->
+<div id="myModalSkills" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Skills</h2>
+        <p>Project Experience in MySQL And Microsoft MSSQl.</p>
+        <cite>-2 Years Experience</cite>
+    </div>
+</div>
+
+<!-- Modal Popup for Achievements -->
+<div id="myModalAchievements" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Achievements</h2>
+        <p>Project Experience on SCADA Application Development using ASP.NET Core and MVC.</p>
+        <cite>-1.5 Years Experience</cite>
+    </div>
+</div>
+
+<!-- Modal Popup for Qualification -->
+<div id="myModalQualification" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Qualification</h2>
+        <p>C# Advanced Certification.<br>Worked on HMI(Human Machine Interfaces) development in Pharmaceutical Applications.</p>
+        <cite>-2 Years Experience</cite>
+    </div>
+</div>
+<div id="mumbaiModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="mumbaiClose">&times;</span>
+        <h2>Mumbai</h2>
+        <p>Modal content for Mumbai.</p>
+        <cite>Author: Your Name</cite>
+    </div>
+</div>
+
+<!-- Modal for History -->
+<div id="historyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="historyClose">&times;</span>
+        <h2>History</h2>
+        <p>Modal content for History.</p>
+        <cite>Author: Your Name</cite>
+    </div>
+</div>
+
+<!-- Modal for Organize -->
+<div id="organizeModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="organizeClose">&times;</span>
+        <h2>Organize</h2>
+        <p>Modal content for Organize.</p>
+        <cite>Author: Your Name</cite>
+    </div>
+</div>
+
+<!-- Modal for Cooking -->
+<div id="cookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="cookingClose">&times;</span>
+        <h2>Cooking</h2>
+        <p>Modal content for Cooking.</p>
+        <cite>Author: Your Name</cite>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
 <footer>
     <div class="container">
         <p style="text-align: right; font-size: xx-small;">&copy; 2023 Venugopal Chavate</p>

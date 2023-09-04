@@ -1,56 +1,75 @@
+    const modals = document.querySelectorAll('.modal');
+    const closeModal = document.querySelectorAll('.close');
+    const experienceBtn = document.querySelector('.Experience');
+    const skillsBtn = document.querySelector('.Skills');
+    const achievementsBtn = document.querySelector('.achievements');
+    const qualificationBtn = document.querySelector('.qualification');
+    const mumbaiBtn = document.querySelector('.mumbai');
+    const historyBtn = document.querySelector('.history');
+    const organizeBtn = document.querySelector('.organize');
+    const cookingBtn = document.querySelector('.cooking');
+    
+    function showModal(modal) {
+        modal.style.display = 'block';
+    }
 
-(function ($) {
-    "use strict";
+    function hideModal(modal) {
+        modal.style.display = 'none';
+    }
 
-    /*==================================================================
-    [ Validate ]*/
-    var input = $('.validate-input .input100');
-
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
+    closeModal.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            hideModal(modals[index]);
         });
     });
 
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
+    window.addEventListener('click', (e) => {
+        modals.forEach((modal) => {
+            if (e.target === modal) {
+                hideModal(modal);
             }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
-    }
+        });
+    });
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
+    // Show modals on button clicks
+    experienceBtn.addEventListener('click', () => {
+        showModal(modals[0]);
+    });
 
-        $(thisAlert).addClass('alert-validate');
-    }
+    skillsBtn.addEventListener('click', () => {
+        showModal(modals[1]);
+    });
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
+    achievementsBtn.addEventListener('click', () => {
+        showModal(modals[2]);
+    });
 
-        $(thisAlert).removeClass('alert-validate');
-    }
-    
-    
+    qualificationBtn.addEventListener('click', () => {
+        showModal(modals[3]);
+    });
 
-})(jQuery);
+    mumbaiBtn.addEventListener('click', () => {
+        showModal(modals[4]);
+    });
+
+    historyBtn.addEventListener('click', () => {
+        showModal(modals[5]);
+    });
+
+    organizeBtn.addEventListener('click', () => {
+        showModal(modals[6]);
+    });
+
+    cookingBtn.addEventListener('click', () => {
+        showModal(modals[7]);
+    });
+    const mobileBtn = document.getElementById('mobile-cta');
+          nav = document.querySelector('nav');
+          mobileBtnexit = document.getElementById('mobile-exit');
+
+          mobileBtn.addEventListener('click', ()=>{
+              nav.classList.add('menu-btn');
+          })
+          mobileBtnexit.addEventListener('click', ()=>{
+              nav.classList.remove('menu-btn');
+          })
