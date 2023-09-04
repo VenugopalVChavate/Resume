@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
 :root{
     --primary-color :#007Af3;
 }
-$modal-primary-color: #000;
-$modal-secondary-color: #888;
+
 body{
     background:rgba(245, 245, 245, 0.87);
     margin: 0;
@@ -447,12 +448,99 @@ nav{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-content {
+.exp{
+    background: #98c1d9;
+}
+.skills{
+        color: rgba(30, 30, 30);
+        background: #EDEDED;
+        // Your styles for .modal-content here
+        &::before,
+        &::after {
+          // Styles for ::before and ::after pseudo-elements of .modal-content
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          // Other styles specific to the pseudo-elements
+        }   
+        // style for skills Modal 
+        // .fa-circleci:before{content:url(./images/circleci.svg)}
+
+ul {
+    width: min(60rem, 90%);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  ul li {
+    max-width: 12rem;
+    justify-self: center;
+    display: grid;
+    grid-template:
+      "icon"
+      "line"
+      "dot"
+      "title"
+      "descr" 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  ul li .icon {
+    grid-area: icon;
+    width: 6rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 2.5rem;
+    border: 0.4rem solid var(--bgColor);
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+      inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+  }
+  
+  ul li::before {
+    content: "";
+    grid-area: line;
+    height: 2rem;
+    border-right: 2px dotted currentColor;
+  }
+  
+  ul li::after {
+    content: "";
+    grid-area: dot;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--accent-color);
+    justify-self: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul li .title {
+    grid-area: title;
+    margin-block: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  //style for skills Modal
+         
+}
+.modal-content{
     position: relative;
     height: 100%;
     overflow-x: clip;
     overflow-y: scroll;
-    background: #98c1d9;
     // background-color: #fff;
     margin: 0% auto;
     padding: .5em;
