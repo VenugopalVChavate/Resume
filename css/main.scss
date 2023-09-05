@@ -143,8 +143,8 @@ section{
             }
 
             &.mumbai:hover {
-                background-image: url('../images/mumbai.jpg');
-                background-size: cover;
+                background-image: url('../images/mumbaicover.jpg');
+                background-size:100% 100%;
                 .hovertext::before {
                     background: rgba(0, 0, 0, 0.5); /* Translucent Black */
                 }
@@ -449,11 +449,21 @@ nav{
 }
 
 .exp{
+    padding: .5em;
     background: #98c1d9;
+    height: 100%;
+    overflow-x: clip;
+    overflow-y: scroll;
+    width: 70%;
 }
 .skills{
+        padding: .5em;
         color: rgba(30, 30, 30);
         background: #EDEDED;
+        height: 100%;
+        overflow-x: clip;
+        overflow-y: scroll;
+        width: 70%;
         // Your styles for .modal-content here
         &::before,
         &::after {
@@ -467,6 +477,7 @@ nav{
         // .fa-circleci:before{content:url(./images/circleci.svg)}
 
 ul {
+    padding:0em;
     width: min(60rem, 90%);
     margin-inline: auto;
     display: grid;
@@ -502,6 +513,8 @@ ul {
     border: 0.4rem solid var(--bgColor);
     border-radius: 50%;
     background: var(--accent-color);
+    background-image: var(--accent-image);
+    background-size:contain;
     box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
       inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
   }
@@ -536,16 +549,138 @@ ul {
   //style for skills Modal
          
 }
-.modal-content{
-    position: relative;
-    height: 100%;
+//mumbai modal
+.mumbaicontent{
+    top: 25%;
+    height: 60%;
+    overflow-x: clip;
+    overflow-y: clip;
+    width: 60%;
+    background: rgb(241, 241, 241);
+    ul{
+        height:100%;
+        width: 100%;
+        margin: 0em;
+        padding: 0em;
+        .m{
+            background-image: url(../images/mumbai.jpg);
+            background-size: 100% 100%;
+            color: white;
+            font-size: medium;
+            height:50%;
+            width:100%;
+            align-items:end;
+            padding-left: 0.1em;
+            div{
+                color:rgba(0, 0, 0, 0.7);
+                box-shadow: 0em 0em 1em rgba(0,0,0,.8);
+                width:50%;
+                border-radius: .5em;
+                padding-left: 1em;
+                background-color: rgb(240, 248, 255, .8);
+            }
+        }
+        .b{
+            background-image: url(../images/bengaluru.jpg);
+            background-size: 100% 100%;
+            font-size: medium;
+            height:50%;
+            width:100%;            
+            align-items:end;
+            padding-left: 0.1em;
+            div{
+                color:rgba(0, 0, 0, 0.7);
+                box-shadow: 0em 0em 1em rgba(0,0,0,.8);
+                border-radius: .5em;
+                width:50%;
+                padding-left: 1em;
+                background-color: rgb(240, 248, 255, .8);
+            }
+        }
+    }
+}
+//mumbai modal
+//discussion modal
+.discussion{
+    top: 20%;
+    height: 60%;
+    overflow-x: clip;
+    overflow-y: clip;
+    width: 60%;
+    background: rgb(241, 241, 241);
+    background-image: url('../images/discussion.jpg');
+    background-size:contain;
+    padding-left: 1em;
+    .points{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(240, 248, 255, .8);
+        ul{
+            height: 65%;
+            list-style-image: url('../images/bullet.png');
+            padding: 0%;
+            span{
+                color:#007Af3;
+                font-weight: bold;
+                margin:0;
+                padding:0%;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                margin: 1em 0;
+                padding-bottom: 1.5em;
+                position: relative; 
+            }
+            li::before{
+                content: '';
+                width: 2em;
+                height: 2em;
+                background-image: url('../images/bullet.png');
+                background-size: cover;
+                margin-right: 0.5em;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+//discussion modal
+//decisive
+
+.decisive{
+    top: 20%;
+    height: 60%;
     overflow-x: clip;
     overflow-y: scroll;
-    // background-color: #fff;
+    width: 50%;
+    background-image: url('../images/organise.jpg');
+    background-size:contain;
+    .highlights{
+        margin:0;
+        padding:0;
+        top:0%;
+    ul{
+        padding: 0;
+        margin:0;
+        .outerlist{
+            margin: 0em 0em 0em 0em;
+            padding: 1em;
+            .itsme{
+                background-color: rgb(241, 241, 241,.95);
+                padding: 2em 2em 2em 2em;
+                box-shadow: 0em 0em 1em rgba(0,0,0,.9);
+            }
+        }
+    }
+    }
+}
+
+//decisive
+.modal-content{
+    position: relative;
     margin: 0% auto;
-    padding: .5em;
     border: 0.0625em solid #888;
-    width: 70%;
     border-radius: 1em;
     justify-content: center;
     p {
@@ -628,9 +763,7 @@ ul {
 	}
 
 }
-    
 /* Style for Work Experience Modal */
-
 }
 
 .close {
