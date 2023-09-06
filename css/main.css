@@ -890,19 +890,19 @@ nav li a:hover {
     height: 80%;
   }
   .tw div {
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 0em;
   }
   .cw div {
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 0em;
   }
   .pw div {
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 0em;
   }
   .top {
-    left: 1em;
+    left: 0.5em;
   }
   .decisive {
     width: 95%; /* Set the width to 94% for mobile screens */
@@ -918,7 +918,7 @@ nav li a:hover {
     height: 80%;
   }
   .certs .qualification-top ul li blockquote {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 /* Achievements modal*/
