@@ -891,7 +891,7 @@ ul {
     .module {
       display: flex;
       flex-direction: row;
-      width: 22em;
+      width: 100%;
       height: 12.5em;
       margin: 0.7em 0em 0em 0.7em;
       position: relative;
@@ -997,33 +997,37 @@ ul {
   @media (max-width: 768px) {
     .milestones {
       width: 90%; /* Set the width to 94% for mobile screens */
+      .module {
+        margin-left: 0em;
+      }
     }
     .travel{
       width: 90%; /* Set the width to 94% for mobile screens */
       height: 80%;
-    }
-
+    ul{
     .tw {
         div{
-            font-size: .7em;
+            font-size: 3.3em;
             padding: 0em;
+            margin: 0em;
       }
     }
     .cw {
         div{
-            font-size: .7em;
+            font-size: 3.3em;
             padding: 0em;
+            margin: 0em;
       }
     }
     .pw {
         div{
-            font-size: .7em;
+            font-size: 3.3em;
             padding: 0em;
+            margin: 0em;
       }
     }
-    .top {
-      left: .5em;
     }
+}
     .decisive {
         width: 95%; /* Set the width to 94% for mobile screens */
       }
