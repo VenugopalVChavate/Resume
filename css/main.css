@@ -552,7 +552,7 @@ nav li a:hover {
   top: 20%;
   height: 60%;
   overflow-x: clip;
-  overflow-y: clip;
+  overflow-y: scroll;
   width: 60%;
   background: rgb(241, 241, 241);
   background-image: url("../images/discussion.jpg");
@@ -569,14 +569,9 @@ nav li a:hover {
   list-style-image: url("../images/bullet.png");
   padding: 0%;
 }
-.discussion .points ul span {
-  color: #007Af3;
-  font-weight: bold;
-  margin: 0;
-  padding: 0%;
-}
 .discussion .points ul li {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 1em 0;
   padding-bottom: 1.5em;
@@ -714,6 +709,48 @@ nav li a:hover {
   font-size: 2em;
 }
 
+/* Achievements modal*/
+.milestones {
+  top: 20%;
+  height: 60%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.9);
+}
+.milestones .module {
+  display: flex;
+  flex-direction: row;
+  width: 22em;
+  height: 12.5em;
+  margin: 0.7em 0em 0em 0.7em;
+  position: relative;
+  float: left;
+  color: white;
+  background-image: var(--accent-award);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.milestones .top h3 {
+  color: white;
+  margin: 0;
+  padding: 0.1em;
+  width: 100%;
+}
+.milestones p {
+  display: flex;
+  position: absolute;
+  bottom: 0em;
+  padding: 2px;
+  color: white;
+  margin: 0;
+  font-size: small;
+  font-weight: bold;
+}
+
+/* Achievements modal*/
 /* Style for scroll bar */
 /* Initially hide the scrollbar */
 ::-webkit-scrollbar {
@@ -722,12 +759,14 @@ nav li a:hover {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  border-radius: 0.634;
 }
 
 /* Show the scrollbar when it's hovered or when page is scrolled */
 ::-webkit-scrollbar:hover,
 ::-webkit-scrollbar-thumb:active {
   opacity: 1;
+  border-radius: 0.634;
 }
 
 /* Track styles */
@@ -744,5 +783,6 @@ nav li a:hover {
 
 /* Thumb styles on hover */
 ::-webkit-scrollbar-thumb:hover {
+  border-radius: 0.634;
   background: #999;
 }/*# sourceMappingURL=main.css.map */
